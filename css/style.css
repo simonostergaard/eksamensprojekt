@@ -587,6 +587,7 @@ footer p{
     outline: none;
     position: relative;
     z-index: 1;
+    margin-bottom: 40px;
 }
 
 .btn-link button:hover{
@@ -626,6 +627,13 @@ footer p{
     0%{background-position: 0px;}
     100%{background-position: -30000px;}
 }
+
+@media(min-width: 1000px){
+    .btn-link button{
+        margin-bottom: 0;
+    }
+}
+
 
 /* Portfolio */
 
