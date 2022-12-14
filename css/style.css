@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kristi&family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@700&display=swap');
 
 /* --- Generel Styling --- */
 
@@ -42,7 +42,7 @@ h2{
     font-family: 'Source Serif Pro';
     text-transform: uppercase;
     font-size: 2.25rem;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     margin-bottom: 10px;
 }
 
@@ -359,6 +359,10 @@ nav a:hover{
     margin-bottom: 40px;
 }
 
+.bio-area p{
+    margin-bottom: 40px;
+}
+
 /* Skills */
 
 .skills-area h3{
@@ -428,14 +432,13 @@ nav a:hover{
 
 .work-area p,
 .work-area-2 p{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .work-area img{
     display: block;
     max-width: 100%;
     margin: 0 auto;
-    margin-top: 40px;
 }
 
 .work-area img{
@@ -446,15 +449,11 @@ nav a:hover{
     margin-bottom: 40px;
 }
 
-.work-area-2 image{
-    margin-bottom: 40px;
-}
-
 .work-area ul li,
 .work-area-2 ul li{
     list-style: none;
-    font-size: 0.6rem;
-    margin-bottom: 30px;
+    font-size: 0.8rem;
+    margin-bottom: 40px;
 }
 
 .work-area ul li i,
@@ -462,10 +461,34 @@ nav a:hover{
     margin-right: 20px;
 }
 
+/* Contact */
+
+.contact-area img{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.contact-info p{
+    margin-bottom: 40px;
+}
+
+.contact-info ul li{
+    list-style: none;
+    font-size: 0.6rem;
+    margin-bottom: 30px;
+}
+
+.contact-info ul li i{
+    margin-right: 10px;
+}
+
+/* Button */
+
 .btn button{
     width: 200px;
     height: 45px;
-    margin-top: 40px;
     border: none;
     font-family: 'Montserrat', 'san-serif';
     font-size: 1rem;
@@ -506,32 +529,17 @@ nav a:hover{
     z-index: -1;
 }
 
-/* Contact */
-
-.contact-area img{
-    display: block;
-    max-width: 100%;
-    margin: 0 auto;
-    margin-bottom: 40px;
-}
-
-.contact-info p{
-    margin-bottom: 40px;
-}
-
-.contact-info ul li{
-    list-style: none;
-    font-size: 0.8rem;
-    margin-bottom: 30px;
-}
-
-.contact-info ul li i{
-    margin-right: 10px;
-}
-
 /* --- Content (Desktop) --- */
 
-@media(min-width: 1000px){
+@media(min-width: 720px){
+    .contact-info ul li,
+    .work-area ul li,
+    .work-area-2 ul li{
+        font-size: 1rem;
+    }
+}
+
+@media(min-width: 960px){
     .bio-area img{
         margin-bottom: 0;
     }
@@ -543,11 +551,6 @@ nav a:hover{
     .work-area-2 ul li{
         font-size: 1.125rem;
     }
-    .work-area p,
-    .work-area-2 p{
-    margin-bottom: 50px;
-    }
-
     .work-area ul li,
     .work-area-2 ul li{
     margin-bottom: 40px;        
@@ -569,72 +572,6 @@ footer p{
     font-size: 1rem;
     padding-bottom: 40px;
 }
-
-/* --- Side pages --- */
-
-/* Animation */
-
-.btn-link button{
-    width: 200px;
-    height: 45px;
-    border: none;
-    font-family: 'Montserrat', 'san-serif';
-    font-size: 1rem;
-    text-transform: uppercase;
-    color: #fff;
-    background: var(--clr-forest-0);
-    border-radius: 10px;
-    transition: ease-in-out 0.3s;
-    outline: none;
-    position: relative;
-    z-index: 1;
-    margin-bottom: 40px;
-}
-
-.btn-link button:hover{
-    color: #fff;
-    cursor: pointer;
-}
-
-.btn-link button:before{
-    transition: 0.5s all ease;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    right: 50%;
-    bottom: 0;
-    opacity: 0;
-    content: '';
-    border-radius: 10px;
-    background: var(--clr-forest-2);
-}
-
-.btn-link button:hover:before{
-    transition: 0.5s all ease;
-    left: 0;
-    right: 0;
-    opacity: 1;
-    z-index: -1;
-}
-
-.sprite {
-    width: 500px;
-    height: 500px;
-    background: url('../image/png/outdoor.png') 0 0 no-repeat;
-    animation: play 6s steps(60) infinite;
-}
-
-@keyframes play {
-    0%{background-position: 0px;}
-    100%{background-position: -30000px;}
-}
-
-@media(min-width: 1000px){
-    .btn-link button{
-        margin-bottom: 0;
-    }
-}
-
 
 /* Portfolio */
 
