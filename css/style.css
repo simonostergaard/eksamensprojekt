@@ -30,6 +30,7 @@ body{
     font-family: 'Montserrat', 'san-serif';
     line-height: 1.2;
     color: #fff;
+    background-color: var(--clr-bg-dark-1);
 }
 
 h1{
@@ -595,5 +596,5 @@ footer{
 
 footer p{
     font-size: 0.8rem;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
