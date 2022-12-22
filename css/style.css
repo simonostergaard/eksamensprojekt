@@ -373,7 +373,7 @@ nav a:hover{
 
 .skills-area .box{
     position: relative;
-    height: 300px;
+    height: 350px;
     background: var(--clr-bg-dark-1);
     margin: 10px;
     box-sizing: border-box;
